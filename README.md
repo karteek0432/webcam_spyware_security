@@ -3,7 +3,6 @@
 A powerful and user-friendly Python GUI application that protects your webcam from unauthorized access and spyware using **Face Recognition**, **Email OTP Authentication**, **System Registry Control**, and **Scheduled Privacy Mode**.
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-orange)
 
 ---
@@ -24,11 +23,6 @@ A powerful and user-friendly Python GUI application that protects your webcam fr
 
 
 
-```
-![Dashboard](screenshots/dashboard.png)
-![Face Registration](screenshots/face_registration.png)
-![Privacy Schedule](screenshots/schedule.png)
-```
 
 ---
 
