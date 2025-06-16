@@ -23,7 +23,6 @@ A powerful and user-friendly Python GUI application that protects your webcam fr
 
 
 
-
 ---
 
 ## 📌 Features
