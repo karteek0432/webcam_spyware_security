@@ -61,17 +61,28 @@ It demonstrates implementation of physical-level protection to **secure webcams 
 
 ## 🚀 How to Run
 
-### Option 1: Run using Python (Recommended for Developers)
+**⚙️ Setup for Email OTP and Alerts**
+
+To enable email-based OTP verification and intruder alerts, you must edit the Python file with your own Gmail and App Password.
+
+**📌 Follow these steps:**
+
+Open the file webcam_spyware_security.py
+
+**Find and replace the following lines with your credentials:**
+SENDER_EMAIL = "your_email@gmail.com"
+APP_PASSWORD = "your_app_password"
+RECEIVER_EMAIL = "receiver_email@gmail.com"
+
+**⚠️ Important:**
+-Use a Gmail address with 2-Step Verification enabled
+-Generate a 16-character App Password from your Google Account
+-Do not share this file publicly after editing
+### ORun using Python:
 
 ```bash
 python webcam_spyware_security.py
 ```
-
-### Option 2: Run EXE (Recommended for Non-Developers)
-
-- Locate the compiled `.exe` file: `WebcamSecuritySystem.exe`
-- 👉 **Right-click > Run as Administrator**
-
 ---
 
 ## ⚠️ Important Notes
@@ -79,7 +90,6 @@ python webcam_spyware_security.py
 > 🛑 **You must run the program with administrative privileges** to allow registry-level changes to the webcam settings.
 
 - For `.py` file: Open command prompt as **Administrator**
-- For `.exe` file: Just **Run as Administrator**
 
 ---
 
