@@ -70,16 +70,21 @@ To enable email-based OTP verification and intruder alerts, you must edit the Py
 Open the file webcam_spyware_security.py
 
 **Find and replace the following lines with your credentials:**
-SENDER_EMAIL = "your_email@gmail.com"
-APP_PASSWORD = "your_app_password"
+<br>
+SENDER_EMAIL = "your_email@gmail.com"<br>
+APP_PASSWORD = "your_app_password"<br>
 RECEIVER_EMAIL = "receiver_email@gmail.com"
 
 **⚠️ Important:**
--Use a Gmail address with 2-Step Verification enabled
--Generate a 16-character App Password from your Google Account
+<br>
+-Use a Gmail address with 2-Step Verification enabled<br>
+-Generate a 16-character App Password from your Google Account<br>
 -Do not share this file publicly after editing
-### ORun using Python:
+### Run using Python:
 
+```bash
+pip install -r requirements.txt
+```
 ```bash
 python webcam_spyware_security.py
 ```
@@ -90,6 +95,23 @@ python webcam_spyware_security.py
 > 🛑 **You must run the program with administrative privileges** to allow registry-level changes to the webcam settings.
 
 - For `.py` file: Open command prompt as **Administrator**
+- If you face any errors running the Python script, you can convert it into a .exe file using the following command:
+```bash
+python -m PyInstaller --onefile --windowed --icon=camera.ico ^
+  --add-data "camera.png;." ^
+  --add-data "suprajatechnologieslogo.jpeg;." ^
+  --add-data "face_recognition_models;face_recognition_models" ^
+  --hidden-import=cv2 ^
+  --hidden-import=numpy ^
+  --hidden-import=dlib ^
+  --hidden-import=face_recognition.api ^
+  --hidden-import=face_recognition.face_recognition_cli ^
+  --hidden-import=PIL.JpegImagePlugin ^
+  --hidden-import=PIL.PngImagePlugin ^
+  --hidden-import=PIL._tkinter_finder ^
+  webcam_spyware_security.py
+```
+- After building, go to the dist/ folder and Right-click → Run the EXE as Administrator
 
 ---
 
