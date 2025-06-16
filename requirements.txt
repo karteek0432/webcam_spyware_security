@@ -1,0 +1,7 @@
+customtkinter
+opencv-python
+pillow
+face_recognition
+numpy
+schedule
+python-dotenv
